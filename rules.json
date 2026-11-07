@@ -52,5 +52,41 @@
       "urlFilter": "||i.ytimg.com/vi_webp/*",
       "resourceTypes": ["image"]
     }
+  },
+  {
+    "id": 7,
+    "priority": 100,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "||adservice.google.com^",
+      "resourceTypes": ["script", "xmlhttprequest", "sub_frame"]
+    }
+  },
+  {
+    "id": 8,
+    "priority": 100,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "||pagead2.googlesyndication.com^",
+      "resourceTypes": ["script", "xmlhttprequest", "sub_frame"]
+    }
+  },
+  {
+    "id": 9,
+    "priority": 100,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "||youtube.com/api/stats/ads^",
+      "resourceTypes": ["xmlhttprequest", "script"]
+    }
+  },
+  {
+    "id": 10,
+    "priority": 100,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "||yt3.ggpht.com/ads-",
+      "resourceTypes": ["image"]
+    }
   }
 ]
