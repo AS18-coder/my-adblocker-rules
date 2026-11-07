@@ -34,5 +34,23 @@
       "urlFilter": "*youtube.com/pagead/*",
       "resourceTypes": ["xmlhttprequest", "sub_frame", "script", "other", "media"]
     }
+  },
+  {
+    "id": 5,
+    "priority": 100,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "||s0.2mdn.net^",
+      "resourceTypes": ["script", "image", "xmlhttprequest", "sub_frame", "media"]
+    }
+  },
+  {
+    "id": 6,
+    "priority": 100,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "||i.ytimg.com/vi_webp/*",
+      "resourceTypes": ["image"]
+    }
   }
 ]
